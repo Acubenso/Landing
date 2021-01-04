@@ -1,0 +1,250 @@
+$accent: #D7B399;
+$dark: #212121;
+$light: #F9F6F1;
+$grey: #CBCFD4;
+$light-grey: #F4F4F4;
+$dark-grey: #8D8D8D;
+$important: #D84033;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &-light {
+        background-color: $light;
+    }
+
+    &-dark {
+        background-color: $dark;
+        color: #fff;
+        padding: 50px 0;
+    }
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+    padding-top: 46px;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+
+    &-item {
+        margin-right: 52px;
+    }
+
+    &-link {
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.cart {
+    background-image: url(..img/cart.svg);
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    &-count {
+        background-color: $accent;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px 15px;
+    }
+}
+
+.title-h2 {
+	text-align: center;
+	font-size: 36px;
+}
+
+.btn {
+    background-color: $accent;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+
+    &-xs {
+        padding: 18px 28px;
+    }
+    &-center {
+    	display: block;
+    	text-align: center;
+    	max-width: 200px;
+    	margin: 0 auto;
+    	span {
+    		margin-right: 15px;
+    	}
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        flex: 0 0 50%;
+    }
+}
+
+.sale {
+    &-description {
+        font-size: 30px;
+    }
+
+    &-title {
+        font-size: 55px;
+        font-weight: 700;
+    }
+}
+
+.box {
+    position: relative;
+
+    &-price {
+        position: absolute;
+        right: 0;
+        text-align: right;
+
+        &-old {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &-new {
+            font-size: 42px;
+            font-weight: 700;
+            color: $important;
+        }
+    }
+}
+
+.notice {
+    text-align: center;
+
+    &-title {
+        font-size: 30px;
+        text-transform: uppercase;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        flex: 0 0 50%;
+        padding: 50px 0;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 190px 171px;
+    }
+
+    &-man {
+        background-image: url("../img/man.png");
+    }
+
+    &-woman {
+        background-image: url("../img/woman.png");
+    }
+
+    &-title {
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;	
+	&-item {
+		flex: 0 0 24%;
+		position: relative; 
+		&:before, &:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 50px; 	
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		&:before {
+			background-image: url("../img/angle_top.svg");
+		}
+		&:after {
+			background-image: url("../img/angle_bottom.svg");
+		}
+	}
+	&-title {
+		font-weight: 600;
+	}
+	&-price {
+		color: $accent;
+		font-size: 18px;
+	} 
+}
+.dark {
+	background-color: $dark;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	&-logo {
+		flex: 0 0 40%;
+	}
+	&-nav {
+		flex: 0 0 60%;
+		display: flex;
+		justify-content: space-between;
+		color: #fff;	
+	}
+	&-list {
+		list-style-type: none;
+		padding-left: 0;
+		&-title {
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: 700;
+		}
+		&-item {
+			margin-bottom: 10px;
+		}
+		&-link {
+			color: $grey;
+			text-decoration: none;
+			font-size: 14px;
+		}
+	}
+}
